@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background: lightblue;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+header img{
+    height: 3em;
+}
+nav{
+    background-color: lightcoral;
+    width: 20%;
+}
+main{
+    background-color: lightgoldenrodyellow;
+    width: 60%;
+}
+aside{
+    background-color: lightseagreen;
+    width: 20%;
+}
+footer{
+    background-color: lightslategray;
+    width: 100%;
+}
+
+main form input {
+    display: block;
+    width: 70%;
+    margin: 2em auto;
+    line-height: 2em;
+}
+main form [type="submit"]{
+    width: 50%;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid black;
+    padding: 4px 10px;
+}
+.message {
+    font-weight: bold;
+    color: green;
+}

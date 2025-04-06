@@ -1,0 +1,21 @@
+<?php include '../inc/header.php'; ?>
+<main>
+    <h2>Contact</h2>
+    <form action="<?=ROOT?>pages/traitement.php" method="post">
+        <p class="message">
+            <?php
+             if(isset($_SESSION['message']) && !empty($_SESSION['message'])){
+                echo $_SESSION['message'];
+                $_SESSION['message'] = '';
+             }
+             ?>
+        </p>
+        <input type="text" name="lastname" id="lastname" maxlength="200" placeholder="Nom">
+        <input type="text" name="firstname" id="firstname" maxlength="200" placeholder="Prénom">
+        <input type="email" name="email" id="email" maxlength="200" placeholder="Email">
+        <input type="email" name="confemail" id="confemail" maxlength="200" placeholder="Confirmation email">
+
+        <input type="submit">
+    </form>
+</main>
+<?php include '../inc/footer.php';
