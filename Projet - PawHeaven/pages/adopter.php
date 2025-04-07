@@ -7,27 +7,26 @@
         <thead>
             <tr>
                 <th>Nom</th>
-                <th>Prénom</th>
-                <th>Email</th>
+                <th>Race</th>
+                <th>Description</th>
             </tr>
         </thead>
         <tbody>
 
         <?php
-        // je me connecte à la DB
+
         include '../inc/cle.php';
 
-        // je lis tout
-        $sql = "SELECT * FROM clients";
+        $sql = "SELECT * FROM animaux";
         $reponse = $cle->query($sql);
 
-        // j'affiche avec une boucle
         foreach($reponse AS $r): ?>
 
             <tr>
+                <td><?= $r[''] ?></td>
                 <td><?= $r['nom'] ?></td>
-                <td><?= $r['prenom'] ?></td>
-                <td><?= $r['email'] ?></td>
+                <td><?= $r['race'] ?></td>
+                <td><?= $r['description'] ?></td>
             </tr>
 
 
