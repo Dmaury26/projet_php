@@ -2,7 +2,7 @@
 <main>
     <h2>Connexion</h2>
 
-    <form action="<?=ROOT?>pages/connexion_ok.php" method="post">
+    <form action="<?=ROOT?>pages/user.php" method="post">
         <p class="admin">
             <?php
              if(isset($_SESSION['admin']) && !empty($_SESSION['admin'])){
