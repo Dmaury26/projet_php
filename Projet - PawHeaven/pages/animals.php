@@ -24,10 +24,10 @@
 
             <tr>
                 <td><?= $r[''] ?></td>
-                <td><?= $r['nom'] ?></td>
-                <td><?= $r['espece'] ?></td>
-                <td><?= $r['race'] ?></td>
-                <td><?= $r['description'] ?></td>
+                <td>Nom : <?= $r['nom'] ?></td>
+                <td>Espèce <?= $r['espece'] ?></td>
+                <td>Race <?= $r['race'] ?></td>
+                <td>Description : <?= $r['description'] ?></td>
             </tr>
 
 

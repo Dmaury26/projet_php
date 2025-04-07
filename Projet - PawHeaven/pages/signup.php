@@ -18,7 +18,7 @@
         <input type="password" name="password" id="password" maxlength="200" placeholder="Mot de passe">
         <input type="password" name="confpassword" id="confpassword" maxlength="200" placeholder="Confirmation du mot de passe">
 
-        <input type="submit">
+        <input type="submit" value="S'inscrire">
     </form>
 </main>
 <?php include '../inc/footer.php';
