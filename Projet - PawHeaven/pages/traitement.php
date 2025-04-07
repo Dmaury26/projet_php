@@ -10,6 +10,8 @@ else if (isset($_POST['lastname'])){
     $prenom = htmlspecialchars($_POST['firstname']);
     $email = htmlspecialchars($_POST['email']);
     $confemail = htmlspecialchars($_POST['confemail']);
+    $mdp = htmlspecialchars($_POST['password']);
+    $confmdp = htmlspecialchars($_POST['confpassword']);
 
     if($email !== $confemail){
         header('Location:echec.php');
