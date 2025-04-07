@@ -13,8 +13,8 @@ else if (isset($_POST['lastname'])){
     $mdp = htmlspecialchars($_POST['password']);
     $confmdp = htmlspecialchars($_POST['confpassword']);
 
-    if($email !== $confemail){
-        header('Location:echec.php');
+    if(($email !== $confemail) && ($mdp !== $confmdp)){
+        header('Location:failed_connexion.php');
         exit();
     } else {
         $sql = "INSERT INTO clients (nom, prenom, email) 
@@ -22,8 +22,8 @@ else if (isset($_POST['lastname'])){
      ('$nom','$prenom','$email')";
 
     if($cle->query($sql)){
-        $_SESSION['message'] = "OK tu es enregistré(e)";
-        header('Location:contact.php');
+        $_SESSION['message'] = "Votre compte sur PawHeaven a été créé";
+        header('Location:../index.php');
     }
     }
 

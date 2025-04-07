@@ -8,7 +8,7 @@ if (isset($_POST['identifiant']) && isset($_POST['password'])){
         header('location:animals.php'); 
     }
     elseif(n){ //mettre ici les logins de la base de donnée clients
-        header('localtion:adopter.php');
+        header('localtion:animals.php');
     }
 
     else{

@@ -26,7 +26,7 @@ define('ROOT', '/ccphp/ccphp/');
     <nav>
         <a href="<?= ROOT ?>index.php">Accueil</a>
         <a href="<?= ROOT ?>pages/contact.php">Nous Contacter</a>
-        <a href="<?= ROOT ?>pages/adopter.php">Adoptez</a>
+        <a href="<?= ROOT ?>pages/animals.php">Adoptez</a>
         <a href="<?= ROOT ?>pages/signup.php">S'incrire</a>
         <a href="<?= ROOT ?>pages/connexion.php">Connexion</a>
     </nav>

@@ -1,6 +1,6 @@
 <?php include '../inc/header.php'; ?>
 <main>
-    <h2>Nos animaux à adopter</h2>
+    <h2>Page Administrateur</h2>
 
     <table>
         <caption></caption>
@@ -25,8 +25,21 @@
             <tr>
                 <td><?= $r[''] ?></td>
                 <td><?= $r['nom'] ?></td>
+                <td><?= $r['espece'] ?></td>
                 <td><?= $r['race'] ?></td>
                 <td><?= $r['description'] ?></td>
+                <td>
+                    <form action="suppression.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $r['id'] ?>">
+                        <input type="image" src="../images/supp.jpg"> <!-- images à rajouter -->
+                    </form>
+                </td>
+                <td>
+                    <form action="modification.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $r['id'] ?>">
+                        <input type="image" src="../images/modif.jpg"> <!-- images à rajouter -->
+                    </form>
+                </td>
             </tr>
 
 
