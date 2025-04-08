@@ -23,10 +23,11 @@
         foreach($reponse AS $r): ?>
 
             <tr>
-                <td><?= $r[''] ?></td>
+                
                 <td>Nom : <?= $r['nom'] ?></td>
-                <td>Espèce <?= $r['espece'] ?></td>
-                <td>Race <?= $r['race'] ?></td>
+                <td>Sex :<?= $r['sex'] ?></td>
+                <td>Race :<?= $r['race'] ?></td>
+                <td>Espèce :<?= $r['espece'] ?></td>
                 <td>Description : <?= $r['description'] ?></td>
             </tr>
 

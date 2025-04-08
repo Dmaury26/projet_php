@@ -1,6 +1,6 @@
 <?php 
 session_start();
-define('ROOT', '/ccphp/ccphp/'); 
+define('ROOT', '/projet_php/'); 
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -26,7 +26,7 @@ define('ROOT', '/ccphp/ccphp/');
     <nav>
         <a href="<?= ROOT ?>index.php">Accueil</a>
         <a href="<?= ROOT ?>pages/contact.php">Nous Contacter</a>
-        <a href="<?= ROOT ?>pages/animals.php">Adoptez</a>
+        <a href="<?= ROOT ?>pages/animal.php">Adoptez</a>
         <a href="<?= ROOT ?>pages/signup.php">S'incrire</a>
         <a href="<?= ROOT ?>pages/connexion.php">Connexion</a>
     </nav>

@@ -1,6 +1,6 @@
 <?php
 
-define('SERVER', 'mysql:server=localhost;dbname=' ); //A DEFINIR 
+define('SERVER', 'mysql:server=localhost;dbname=pawheaven' ); 
 define('USER', 'root');
 define('PWD', '');
 

@@ -4,9 +4,11 @@ $id = $_POST['id'];
 
 include '../inc/cle.php';
 
-$sql = "SELECT * FROM clients WHERE id=$id";
+$sql = "SELECT * FROM admin WHERE id=$id";
 
 $reponse = $cle->query($sql);
+
+foreach($reponse AS $r):
 
 
 if (isset($_POST['identifiant']) && isset($_POST['password'])){
@@ -19,16 +21,12 @@ if (isset($_POST['identifiant']) && isset($_POST['password'])){
     ($_POST['identifiant']== 'maria' && $_POST['password']== 'maria')){
         header('location:admin.php'); 
     }
-    elseif($_POST['identifiant']== '' && $_POST['password']== ''){ //mettre ici les logins de la base de donnée clients
-        header('localtion:animals.php');
-    }
-
     else{
         header('location:echec.php');
     }
 
-}else{
-    header('location:connexion.php');
 }
+
+endforeach;
 
 //Créer une table admin manuellement et utiliser un boucle foreach pour les parcourir et vérifier si le mot de passe et l'ientifiant correspond à un id dans la table 
