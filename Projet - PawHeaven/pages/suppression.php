@@ -3,7 +3,7 @@
 if(isset($_POST['id'])){
     $x = $_POST['id'];
 
-    $sql = "DELETE FROM clients WHERE id=$x";
+    $sql = "DELETE FROM animaux WHERE id=$x";
 
     include '../inc/cle.php';
 

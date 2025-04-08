@@ -12,6 +12,7 @@ foreach($reponse AS $r): ?>
 
     <form action="update_aniaml.php" method="POST">
         <input type="text" name="nom" id="nom" value="<?= $r['nom'] ?>" maxlenght="200">
+        <input type="text" name="nom" id="nom" value="<?= $r['nom'] ?>" maxlenght="20">
         <input type="text" name="espece" id="espece" value="<?= $r['espece'] ?>" maxlenght="200">
         <input type="text" name="race" id="race" value="<?= $r['race'] ?>" maxlenght="200">
         <input type="text" name="descrption" id="description" value="<?= $r['description'] ?>" maxlenght="1000">

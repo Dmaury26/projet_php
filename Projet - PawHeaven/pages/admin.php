@@ -23,11 +23,18 @@
         foreach($reponse AS $r): ?>
 
             <tr>
-                <td><?= $r[''] ?></td>
+                
                 <td><?= $r['nom'] ?></td>
-                <td><?= $r['espece'] ?></td>
+                <td><?= $r['sex'] ?></td>
                 <td><?= $r['race'] ?></td>
+                <td><?= $r['espece'] ?></td>
                 <td><?= $r['description'] ?></td>
+                <td>
+                    <form action="add.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $r['id'] ?>">
+                        <input type="image" src="../images/add.jpg"> <!-- images à rajouter -->
+                    </form>
+                </td>
                 <td>
                     <form action="suppression.php" method="POST">
                         <input type="hidden" name="id" value="<?= $r['id'] ?>">
@@ -40,6 +47,7 @@
                         <input type="image" src="../images/modif.jpg"> <!-- images à rajouter -->
                     </form>
                 </td>
+                
             </tr>
 
 
