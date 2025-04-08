@@ -28,7 +28,8 @@
             <tr>
                 
                 <td>Nom : <?= $r['nom'] ?></td>
-                <td>Age : <?= $r['age'] ?> ans</td>               <td>Sex :<?= $r['sex'] ?></td>
+                <td>Age : <?= $r['age'] ?> ans</td>              
+                <td>Sex :<?= $r['sex'] ?></td>
                 <td>Race :<?= $r['race'] ?></td>
                 <td>Espèce :<?= $r['espece'] ?></td>
                 <td>Description : <?= $r['description'] ?></td>

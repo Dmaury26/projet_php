@@ -3,7 +3,7 @@
     <h2>Page Administrateur</h2>
 
     <table>
-        <caption></caption>
+        <caption>Page Administrateur</caption>
         <thead>
             <tr>
                 <th>Nom</th>

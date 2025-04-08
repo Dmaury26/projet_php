@@ -7,14 +7,19 @@ CREATE TABLE admin(
     password varchar(200)
 );
 
+INSERT INTO admin (identifiant, password) 
+VALUES 
+    ('dorian', 'dorian'),
+    ('mariem', 'mariem'),
+    ('maria', 'maria');
+
+
 CREATE TABLE clients(
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     lastname varchar(200),
     firstname varchar(200),
     email varchar(200),
-    confemail(200),
     password varchar(200),
-    confpassword varchar(200)
 );
 
 CREATE TABLE animaux(
