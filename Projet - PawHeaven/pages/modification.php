@@ -16,9 +16,9 @@ foreach($reponse AS $r): ?>
         <select name="age" id="age" required>
             <option value="">Age</option>
             <?php
-            for ($i = 1; $i <= 50; $i++) :
-                echo "<option value='$i'>$i an(s)</option>"
-            endfor; ?>
+            for ($i = 1; $i <= 50; $i++){
+                echo "<option value='$i'>$i an(s)</option>";
+            } ?>
         <input type="text" name="sex" id="sex" value="<?= $r['sex'] ?>" maxlenght="20">
         <input type="text" name="espece" id="espece" value="<?= $r['espece'] ?>" maxlenght="200">
         <input type="text" name="race" id="race" value="<?= $r['race'] ?>" maxlenght="200">

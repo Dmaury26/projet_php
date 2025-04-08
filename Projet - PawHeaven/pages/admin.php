@@ -7,7 +7,10 @@
         <thead>
             <tr>
                 <th>Nom</th>
+                <th>Age</th>
+                <th>Sex<th>
                 <th>Race</th>
+                <th>Espèce</th>
                 <th>Description</th>
             </tr>
         </thead>
