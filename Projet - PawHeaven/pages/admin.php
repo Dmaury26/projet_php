@@ -25,6 +25,7 @@
             <tr>
                 
                 <td><?= $r['nom'] ?></td>
+                <td><?= $r['age'] ?></td>
                 <td><?= $r['sex'] ?></td>
                 <td><?= $r['race'] ?></td>
                 <td><?= $r['espece'] ?></td>

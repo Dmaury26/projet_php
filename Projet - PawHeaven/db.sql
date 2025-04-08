@@ -20,8 +20,9 @@ CREATE TABLE clients(
 CREATE TABLE animaux(
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nom varchar(200),
+    age int,
     sex varchar(20),
-    espece varchar(200),
     race varchar(200),
+    espece varchar(200),
     description varchar(1000)
 );

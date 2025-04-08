@@ -7,7 +7,10 @@
         <thead>
             <tr>
                 <th>Nom</th>
+                <th>Age</th>
+                <th>Sex<th>
                 <th>Race</th>
+                <th>Espèce</th>
                 <th>Description</th>
             </tr>
         </thead>
@@ -25,7 +28,7 @@
             <tr>
                 
                 <td>Nom : <?= $r['nom'] ?></td>
-                <td>Sex :<?= $r['sex'] ?></td>
+                <td>Age : <?= $r['age'] ?> ans</td>               <td>Sex :<?= $r['sex'] ?></td>
                 <td>Race :<?= $r['race'] ?></td>
                 <td>Espèce :<?= $r['espece'] ?></td>
                 <td>Description : <?= $r['description'] ?></td>

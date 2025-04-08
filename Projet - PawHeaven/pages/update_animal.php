@@ -2,6 +2,7 @@
 if(isset($_POST['nom'])){
 
     $nom = htmlspecialchars($_POST['nom']);
+    $age = htmlspecialchars($_POST['age']);
     $sex = htmlspecialchars($_POST['sex']);
     $espece = htmlspecialchars($_POST['espece']);
     $race = htmlspecialchars($_POST['race']);
